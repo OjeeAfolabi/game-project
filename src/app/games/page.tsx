@@ -11,7 +11,7 @@ const GamePage = () => {
         {games.map((game) => (
           <Link className="group relative bg-gray-900 p-5 rounded-xl shadow-lg transform transition hover:scale-105 hover:shadow-xl" key={game.id} href={`/games/${game.category}/${game.slug}`}>
             <div className="relative">
-              <img className="w-full h-52 object-cover rounded-lg group-hover:opacity-80 transition" src={game.image} alt={game.title} />
+              <img className="w-full h-52 object-cover rounded-lg group-hover:opacity-30 transition" src={game.image} alt={game.title} />
             </div>
             <div className="mt-4">
               <h2 className="font-semibold text-white text-lg">{game.title}</h2>
